@@ -1,0 +1,76 @@
+
+
+/* ======================================= Sidebar ============================== */
+
+:root {
+    --primary-color: #19369C;
+    --primary-dark: #0f2874;
+}
+
+#sidebar {
+    background-color: var(--primary-color);
+    color: white;
+    height: 100%;
+    flex-shrink: 0;
+    transition: width 0.3s ease;
+}
+
+#sidebar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar nav .group button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#sidebar nav .group button:hover, #sidebar nav .group button:focus {
+    background-color: var(--primary-dark);
+}
+
+#sidebar nav .group i:last-child {
+    transition: transform 0.3s;
+}
+
+.submenu {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.submenu li button {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem;
+}
+
+.submenu li button:hover, .submenu li button:focus {
+    background-color: var(--primary-dark);
+}
+
+.submenu:not(.hidden) {
+    display: block;
+}
+
+#sidebar .group i.ri-arrow-down-s-line {
+    transition: transform 0.3s ease;
+}
+
+#sidebar .group.active i.ri-arrow-down-s-line {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,22 @@
+
+/* ======================================= Header ============================== */
+
+.profile-menu {
+    position: absolute;
+    right: 0;
+    margin-top: 0.5rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.profile-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.profile-menu li a:hover {
+    background-color: #f7f7f7;
+}

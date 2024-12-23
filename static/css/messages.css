@@ -1,0 +1,63 @@
+
+
+/* ======================================= Message Styles ============================== */
+
+#message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.message {
+    background-color: #fff;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.message.success {
+    background-color: #4caf50;
+}
+
+.message.info {
+    background-color: #2196f3;
+}
+
+.message.warning {
+    background-color: #ff9800;
+}
+
+.message.error {
+    background-color: #f44336;
+}
+
+.message.debug {
+    background-color: #607d8b;
+}
+
+.message:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .message {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .message {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+    }
+}
